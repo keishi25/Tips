@@ -20,8 +20,14 @@ fatal: unable to auto-detect email address (got 'kemu@kemu-System-Product-Name.(
 
 
 初回は、git init でローカルにリポジトリを作成する
+
 ローカルリポジトリで操作
 1. git add --all
 2. git commit -m "任意のコメント"
 
-
+リモートにpush
+1. $ git remote add origin <URLアドレス>]
+登録内容の確認
+2. $ git remote -v
+リモートリポジトリにプッシュ
+3.  $ git push origin master
