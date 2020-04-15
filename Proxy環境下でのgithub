@@ -1,0 +1,29 @@
+公開鍵をgithubに登録した後に、接続テスト(ssh -T github)をしてもフリーズしたまま、githubにアクセスできない。
+結果
+ssh: connect to host github.com port 22: Connection timed out
+
+原因
+ファイアウォールがSSH接続を完全に許可しない場合があるため。
+
+対策
+HTTPSポート経由で作成されたSSH接続を使用してクローン作成を試みる
+
+１．確認
+$ ssh -T -p 443 git@ssh.github.com
+下記が表示されれば次に続く
+> Hi username! You've successfully authenticated, but GitHub does not
+> provide shell access.
+
+２．設定の変更
+443ポートを用いた接続確認が取れているので、その方法をconfigファイルに記述する。
+~/.ssh/configに、下記を記述することで、githubへのssh接続が可能になる。
+
+3.接続確認
+$ ssh -T git@github.com
+> Hi username! You've successfully authenticated, but GitHub does not
+> provide shell access.
+
+これで、proxy環境下でもsshでgithubにアクセスが可能になった
+
+参考サイト
+https://help.github.com/en/github/authenticating-to-github/using-ssh-over-the-https-port
