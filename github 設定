@@ -7,7 +7,8 @@ id_rsa.pubが、公開鍵
 これをgithubに登録する。下記のリンクで設定を行う
 https://github.com/settings/ssh
 TitleとKeyを入力
-TItleは、id_rsa.pubを入力
+Titleは、端末名等を入力して、他の端末と区別を行う
+
 Keyは、下記の方法で取得
 下記のコマンドで、公開鍵がクリップボードにコピーされる
 $ cat id_rsa.pub | xsel --clipboard --input
