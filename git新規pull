@@ -2,4 +2,10 @@
 $git init
 $ ls -a 
 >.git
-2.github上のリモートリポジトリから
+
+2.github上のリモートリポジトリをローカルリポジトリに登録
+$ git remote add origin リモートリポジトリのURL
+
+3.リモートリポジトリをローカルリポジトリにpull
+$ git pull origin master
+
