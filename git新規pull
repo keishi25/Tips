@@ -9,3 +9,7 @@ $ git remote add origin リモートリポジトリのURL
 3.リモートリポジトリをローカルリポジトリにpull
 $ git pull origin master
 
+4.確認
+$　ls
+>README.md
+リモートリポジトリのファイルがローカルリポジトリに反映されている
