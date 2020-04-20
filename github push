@@ -1,0 +1,6 @@
+リモートにpushする方法
+1. $ git remote add origin <URLアドレス>]
+登録内容の確認
+2. $ git remote -v
+リモートリポジトリにプッシュ
+3.  $ git push origin master
