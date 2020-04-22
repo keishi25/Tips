@@ -1,0 +1,12 @@
+github push においてエラーが発生
+エラー内容
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: e47d954e23710e71a97833db8c800479
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File JavaScript/google-charts/.scatter-chart.html.swp is 8750.00 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/keishi25/testtest.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/keishi25/testtest.git'
+
+原因
+・ubuntu上にswpファイルが存在しており、それのファイルサイズが８GBあったため
