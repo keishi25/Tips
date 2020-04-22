@@ -1,5 +1,6 @@
 github push においてエラーが発生
-エラー内容
+
+1.エラー内容
 remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
 remote: error: Trace: e47d954e23710e71a97833db8c800479
 remote: error: See http://git.io/iEPt8g for more information.
@@ -10,3 +11,15 @@ error: failed to push some refs to 'https://github.com/keishi25/testtest.git'
 
 原因
 ・ubuntu上にswpファイルが存在しており、それのファイルサイズが８GBあったため
+
+
+
+2.エラー内容
+error: failed to push some refs to 'https://github.com/keishi25/front-end.git'
+
+原因
+自分がリモートの変更をpullしてから、pushするまでの間に、他からのpushがあるなどしてリモートが変更されている状況
+
+対策
+git fetch    （リモートの変更を取ってきて）
+git merge origin/master    （マージする）
