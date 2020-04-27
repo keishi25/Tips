@@ -23,3 +23,5 @@ error: failed to push some refs to 'https://github.com/keishi25/front-end.git'
 対策
 git fetch    （リモートの変更を取ってきて）
 git merge origin/master    （マージする）
+
+※GNU nanoで抜ける時は、Ctrl+ｘ
