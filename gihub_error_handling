@@ -1,0 +1,10 @@
+症状１
+github上でフォルダにアクセスできない
+症状２
+.gitigonoreが反映されない
+
+対策　キャッシュクリア
+$git rm -r --cached .
+
+参考サイト
+https://qiita.com/fuwamaki/items/3ed021163e50beab7154
