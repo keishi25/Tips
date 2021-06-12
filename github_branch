@@ -12,3 +12,15 @@ branchをマスターにマージさせる
 $ git checkout master
 2.branchをmergeする
 $ git merge (mergeしたいブランチ名) 
+
+
+ブランチ移動の際のエラー
+error: Your local changes to the following files would be overwritten by checkout:
+参考サイト
+https://qiita.com/msk02/items/881d24182bb8bea3304f
+
+コンフリクトを起こしている
+$ git status
+コンフリクト内容を確認できる
+
+
